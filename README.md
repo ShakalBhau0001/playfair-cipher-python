@@ -12,7 +12,10 @@ It is created as a **learning and academic project** to understand how classical
 ```bash
 playfair-cipher-python/
 │
-├── app.py            # Playfair cipher implementation (CLI based)
+├── assets/           # Screenshots
+├── app.py            # Basic CLI Version
+├── interactive.py    # Rich-powered CLI
+├── requirements.txt  # Dependencies
 ├── LICENSE           # Project license
 └── README.md         # Project documentation
 ```
@@ -47,6 +50,16 @@ playfair-cipher-python/
 - Ideal for beginners in cryptography
 - No external dependencies
 
+### 🎨 Rich CLI (Interactive Mode)
+- Beautiful colored terminal UI using Rich
+- Displays key matrix in a structured table
+- Interactive prompts with validation
+- Clean and readable output panels
+
+### ⚡ Dual Mode Support
+- 🧼 Basic CLI → Lightweight, no dependencies
+- 🎨 Rich CLI → Enhanced UI with colors and panels
+
 ---
 
 ## 🛠 Technologies Used
@@ -56,6 +69,7 @@ playfair-cipher-python/
 | **Python 3**      | Core programming language    |
 | **String Module** | Alphabet handling            |
 | **Matrix Logic**  | 5×5 key table implementation |
+| **Rich**          | Styled CLI, colors, panels   |
 
 ---
 
@@ -83,12 +97,35 @@ git clone https://github.com/ShakalBhau0001/playfair-cipher-python.git
 cd playfair-cipher-python
 ```
 
-### 3️⃣ Run the program
+### 3️⃣ Install Dependencies
+
+```bash
+pip install rich
+```
+
+**OR**
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4️⃣ Running the Project
+
+#### 🧼 Basic CLI Version
+
 ```bash
 python app.py
 ```
 
-### 4️⃣ Follow the prompts
+#### 🎨 Rich Interactive Version
+
+```bash
+python interactive.py
+```
+
+### 5️⃣ Follow the prompts for Basic CLI Version
 - Enter a keyword
 - Choose direction:
   - `E` → Encrypt
@@ -122,7 +159,7 @@ Enter message: GATLMZCLRQXA
 Decrypted: INSTRUMENTSX
 ```
 
-> (Note: Final padding letter may appear during decryption.)
+> _**(Note: Final padding letter may appear during decryption.)**_
 
 ---
 
@@ -150,6 +187,12 @@ Decrypted: INSTRUMENTSX
 
 This implementation is created **for educational and learning purposes only.**
 The Playfair Cipher is historically significant but cryptographically insecure and must not be used to protect real-world sensitive data.
+
+---
+
+## 📸 Preview
+
+![Rich CLI Preview](assets/screenshot.png)
 
 ---
 
