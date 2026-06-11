@@ -192,7 +192,13 @@ The Playfair Cipher is historically significant but cryptographically insecure a
 
 ## 📸 Preview
 
-![Rich CLI Preview](assets/screenshot.png)
+### 1. **Encryption**
+
+![Rich CLI Preview](assets/PF-Encrypt.png)
+
+### 2. **Decryption**
+
+![Rich CLI Preview](assets/PF-Decrypt.png)
 
 ---
 
